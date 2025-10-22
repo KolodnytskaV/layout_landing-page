@@ -400,8 +400,7 @@ html, body {
   .recommended__products {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
-    justify-items: stretch;
-    align-items: start;
+    place-items: start stretch;
   }
 }
 
@@ -720,5 +719,3 @@ html, body {
   margin: 0;
   line-height: 140%;
 }
-
-/*# sourceMappingURL=style.css.map */

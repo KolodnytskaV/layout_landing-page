@@ -4,11 +4,11 @@
   width: 100%;
   margin: 0 auto;
 
-  @include onTablet {
+  @include on-tablet {
     width: 100%;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     width: 100%;
   }
 

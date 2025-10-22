@@ -22,12 +22,12 @@
     @include hover(transform, scale(1,2));
     @include hover(transform, 0.3s);
 
-    @include onTablet {
+    @include on-tablet {
       height: 24px;
       width: 228px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       height: 24px;
       width: 228px;
     }

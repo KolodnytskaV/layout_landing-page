@@ -5,13 +5,13 @@
   gap: 0;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
 
     column-gap: 24px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns: 12;
 
     column-gap: 32px;
@@ -29,11 +29,11 @@
     height: auto;
     aspect-ratio: 16/9;
 
-    @include onTablet {
+    @include on-tablet {
       aspect-ratio: 16/7;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       aspect-ratio: 16/6;
     }
   }
@@ -42,11 +42,11 @@
     margin: 0;
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 7;
     }
   }
@@ -65,14 +65,14 @@
     align-items: start;
     row-gap: 32px;
 
-    @include onTablet {
+    @include on-tablet {
       --columns: 6;
 
       column-gap: 24px;
       padding: 120px 72px 120px 73px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       --columns: 12;
 
       column-gap: 32px;
@@ -85,11 +85,11 @@
     padding: 0;
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4 / 7;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 8 / 13;
     }
   }

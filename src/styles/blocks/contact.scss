@@ -9,7 +9,7 @@
     max-width: 1020px;
     margin-inline: auto;
 
-    @include onDesktop {
+    @include on-desktop {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
