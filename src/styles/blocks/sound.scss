@@ -1,0 +1,100 @@
+.sound {
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 16px 0 40px;
+
+    @include onTablet {
+      font-size: 24px;
+      margin: 16px 0 56px;
+    }
+
+    @include onDesktop {
+      font-size: 24px;
+      margin: 16px 0 56px;
+    }
+  }
+
+  &__section {
+    &__image {
+      display: grid;
+      column-gap: 20px;
+
+      --columns: 2;
+
+      grid-template-columns: repeat(var(--columns), 1fr);
+
+      @include onTablet {
+        --columns: 6;
+
+        column-gap: 24px;
+      }
+
+      @include onDesktop {
+        --columns: 12;
+
+        column-gap: 24px;
+      }
+    }
+
+    &__link {
+      display: block;
+      grid-column: span 1;
+
+      @include onTablet {
+        grid-column: span 3;
+      }
+
+      @include onDesktop {
+        grid-column: span 6;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 498 / 324;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #F9F9F9;
+    grid-column: span 1;
+    height: auto;
+    min-height: 130px;
+
+    @include onTablet {
+      aspect-ratio: 288 / 184;
+      min-height: 184px;
+    }
+
+    @include onDesktop {
+      aspect-ratio: 498 / 324;
+      min-height: 324px;
+    }
+  }
+
+  &__button {
+    width: 280px;
+    height: 56px;
+    background-color: #F98921;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 27px;
+    margin: 0 auto;
+
+    @include onTablet {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    @include onDesktop {
+      width: 324px;
+      margin: 0;
+    }
+  }
+}
+

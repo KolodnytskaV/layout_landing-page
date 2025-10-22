@@ -1,0 +1,33 @@
+.page {
+  font-family: Manrope, sans-serif;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 140%;
+
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    min-width: 320px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* left i right 0 розтягують меню на увесь екран */
+    left: 0;
+
+
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    pointer-events: none;
+
+    &:target { /* так як ми написали menu target після page menu тщ воно буде застосовуватися  саме до page */
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    }
+  }
+}
+

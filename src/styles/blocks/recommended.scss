@@ -1,0 +1,21 @@
+.recommended {
+  width: 100%;
+
+
+  &__products {
+    display: grid;
+    row-gap: 40px;
+    justify-items: center;
+    width: 100%;
+
+    @include onTablet {
+      justify-items: center;
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      place-items: start stretch;
+    }
+  }
+}

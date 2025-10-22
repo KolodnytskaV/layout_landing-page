@@ -1,0 +1,46 @@
+.product {
+  line-height: 140%;
+  color: $main-text-color;
+  width: 100%;
+  margin: 0 auto;
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 100%;
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color:#F9F9F9;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+

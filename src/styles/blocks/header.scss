@@ -1,0 +1,42 @@
+.header {
+  //display: none !important;
+
+  background-image: url('./images/header-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: white;
+
+    @include onTablet {
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 56px;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+}
