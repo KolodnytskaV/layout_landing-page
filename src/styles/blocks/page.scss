@@ -6,6 +6,10 @@
 
   scroll-behavior: smooth;
 
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
   &__body {
     margin: 0;
     min-width: 320px;
@@ -31,3 +35,10 @@
   }
 }
 
+img:hover,
+.card:hover,
+.sound__section__link:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

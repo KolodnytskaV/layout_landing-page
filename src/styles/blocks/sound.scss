@@ -85,6 +85,7 @@
     text-align: center;
     line-height: 27px;
     margin: 0 auto;
+    cursor: pointer;
 
     @include on-tablet {
       width: 600px;

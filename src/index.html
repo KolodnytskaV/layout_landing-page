@@ -16,8 +16,8 @@
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
-            <a href="#" class="top-bar__logo">
-              <img src="./images/logo.png" alt="Bose logo">
+            <a href="#top" class="top-bar__logo">
+              <img src="./images/logo-2x.png" alt="Bose logo">
             </a>
             <div class="top-bar__icons">
               <a href="#" class="icon icon--phone"></a>
@@ -39,7 +39,7 @@
       <aside class="page__menu menu" id="menu">
         <div class="container">
           <div class="top-bar menu__top">
-            <a href="#" class="top-bar__logo-link">
+            <a href="#top" class="top-bar__logo-link">
               <img src="./images/logo-2x.png" alt="Bose logo"
               class="top-bar__logo">
             </a>
@@ -185,7 +185,7 @@
           <section class="contact" id="contactus">
             <h2 class="section-title">Contact us</h2>
             <div class="contact__content">
-              <form class="contact__form" action="#">
+              <form class="contact__form" onsubmit="this.reset(); return false;">
                 <input type="text" name="name"
                 placeholder="Name" class="contact__input"
                 required>
@@ -193,17 +193,20 @@
                 placeholder="Email" class="contact__input"
                 required>
                 <textarea name="message" placeholder="Message"
-                class="contact__input"></textarea>
+                class="contact__input" required></textarea>
                 <button type="submit" class="contact__button">Send</button>
               </form>
 
               <div class="contact__info">
                 <p class="contact__name">Phone</p>
-                <p class="contact__info-item">+1 234 5555-55-55</p>
+                <a href="tel:+12345555555" class="contact__info-item">+1 234 5555-55-55</a>
                 <p class="contact__name">Email</p>
-                <p class="contact__info-item">hello@bang&olufsen.com</p>
+                <a href="mailto:hello@bang&olufsen.com" class="contact__info-item">hello@bang&olufsen.com</a>
                 <p class="contact__name">Address</p>
-                <p class="contact__info-item">400 first ave.</br> suite 700 </br> Minneapolis, MN 55401</p>
+                <a href="https://www.google.com/maps?q=400+First+Ave,+Suite+700,+Minneapolis,+MN+55401"
+                target="_blank" class="contact__info-item">
+                400 First Ave,<br> Suite 700<br> Minneapolis, MN 55401
+                </a>
               </div>
             </div>
           </section>

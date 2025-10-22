@@ -12,6 +12,13 @@
     width: 100%;
   }
 
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
   &__photo {
     width: 100%;
     height: auto;
