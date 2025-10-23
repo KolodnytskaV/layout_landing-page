@@ -7,7 +7,6 @@
     gap: 48px;
 
     max-width: 1020px;
-    margin-inline: auto;
     margin: 0 auto;
 
     @include on-desktop {
@@ -16,6 +15,7 @@
       align-items: flex-start;
       padding-inline: 0;
       gap: 120px;
+      max-width: 1020px;
     }
   }
 

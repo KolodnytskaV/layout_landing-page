@@ -185,6 +185,7 @@ html, body {
   text-transform: uppercase;
   padding-bottom: 4px;
   border-bottom: 1px solid #1B2129;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -261,11 +262,17 @@ html, body {
   pointer-events: all;
 }
 
+img,
+.card,
+.sound__section__link {
+  transition: all 0.3s ease;
+}
+
 img:hover,
 .card:hover,
 .sound__section__link:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease;
+
   cursor: pointer;
 }
 
@@ -296,10 +303,14 @@ img:hover,
 
 .top-bar__logo:hover {
   transition: property 0.3s;
+  transition: property 0.3s;
 }
 
 .top-bar__logo:hover:hover {
   transform: scale(1, 2);
+}
+
+.top-bar__logo:hover:hover {
   transform: 0.3s;
 }
 
@@ -393,7 +404,8 @@ img:hover,
   aspect-ratio: 1/1;
   background-color: #F9F9F9;
   border-radius: 4px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -437,7 +449,8 @@ img:hover,
 @media (min-width: 1020px) {
   .recommended__products {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     place-items: start stretch;
   }
 }
@@ -453,16 +466,16 @@ img:hover,
 @media (min-width: 576px) {
   .timeless {
     --columns: 6;
-
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
 }
 
 @media (min-width: 1020px) {
   .timeless {
     --columns: 12;
-
-    column-gap: 32px;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
   }
 }
 
@@ -473,8 +486,10 @@ img:hover,
   max-width: 100vw;
   margin-left: calc(-1 * (100vw - 100%) / 2);
   display: block;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   height: auto;
   aspect-ratio: 16/9;
 }
@@ -489,6 +504,11 @@ img:hover,
   .timeless__image {
     aspect-ratio: 16/6;
   }
+}
+
+.timeless__image:hover {
+  transform: none;
+  cursor: default;
 }
 
 .timeless__title {
@@ -525,8 +545,8 @@ img:hover,
 @media (min-width: 576px) {
   .timeless__content {
     --columns: 6;
-
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     padding: 120px 72px 120px 73px;
   }
 }
@@ -534,8 +554,8 @@ img:hover,
 @media (min-width: 1020px) {
   .timeless__content {
     --columns: 12;
-
-    column-gap: 32px;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
     padding: 120px;
   }
 }
@@ -581,8 +601,8 @@ img:hover,
 
 .sound__section__image {
   display: grid;
-  column-gap: 20px;
-
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   --columns: 2;
 
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -591,16 +611,16 @@ img:hover,
 @media (min-width: 576px) {
   .sound__section__image {
     --columns: 6;
-
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
 }
 
 @media (min-width: 1020px) {
   .sound__section__image {
     --columns: 12;
-
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
 }
 
@@ -624,7 +644,8 @@ img:hover,
 .sound__image {
   width: 100%;
   aspect-ratio: 498/324;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 4px;
   background: #F9F9F9;
   grid-column: span 1;
@@ -685,7 +706,7 @@ img:hover,
   gap: 48px;
   max-width: 1020px;
   margin-inline: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: 1020px) {
@@ -763,7 +784,5 @@ img:hover,
 
 .contact__info-item:hover {
   transition: color 0.3s ease;
-  color: #191919;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: #666;
+}/*# sourceMappingURL=style.css.map */

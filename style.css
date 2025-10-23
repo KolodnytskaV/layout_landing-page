@@ -441,6 +441,10 @@ img:hover,
     aspect-ratio: 16/6;
   }
 }
+.timeless__image:hover {
+  transform: none;
+  cursor: default;
+}
 .timeless__title {
   margin: 0;
   grid-column: 1/-1;
@@ -605,7 +609,6 @@ img:hover,
   flex-direction: column;
   gap: 48px;
   max-width: 1020px;
-  margin-inline: auto;
   margin: 0 auto;
 }
 @media (min-width: 1020px) {
@@ -615,6 +618,7 @@ img:hover,
     align-items: flex-start;
     padding-inline: 0;
     gap: 120px;
+    max-width: 1020px;
   }
 }
 .contact__form {
