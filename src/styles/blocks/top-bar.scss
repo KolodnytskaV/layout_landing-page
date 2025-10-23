@@ -44,5 +44,30 @@
 
   &__logo-link {
     display: flex;
+
+    img {
+      width: 152px;
+      height: 16px;
+      display: block;
+    }
+
+    &:hover {
+      @include hover(transform, scale(1,2));
+      @include hover(transform, 0.3s);
+    }
+
+    @include on-tablet {
+      img {
+        width: 228px;
+        height: 24px;
+      }
+    }
+
+    @include on-desktop {
+      img {
+        width: 228px;
+        height: 24px;
+      }
+    }
   }
 }

@@ -5,8 +5,6 @@
   background-size: cover;
   background-image: url('./images/icon-burger-menu.svg');
 
-  @include hover(transform, scale(1,2));
-
   @include on-tablet {
     height: 32px;
     width: 32px;

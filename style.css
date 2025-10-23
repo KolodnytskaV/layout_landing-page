@@ -70,10 +70,6 @@ html, body {
   display: block;
   background-size: cover;
   background-image: url("./images/icon-burger-menu.svg");
-  transition: property 0.3s;
-}
-.icon:hover {
-  transform: scale(1, 2);
 }
 @media (min-width: 576px) {
   .icon {
@@ -292,6 +288,35 @@ img:hover,
 }
 .top-bar__logo-link {
   display: flex;
+}
+.top-bar__logo-link img {
+  width: 152px;
+  height: 16px;
+  display: block;
+}
+.top-bar__logo-link:hover {
+  transition: property 0.3s;
+}
+.top-bar__logo-link:hover:hover {
+  transform: scale(1, 2);
+}
+.top-bar__logo-link:hover {
+  transition: property 0.3s;
+}
+.top-bar__logo-link:hover:hover {
+  transform: 0.3s;
+}
+@media (min-width: 576px) {
+  .top-bar__logo-link img {
+    width: 228px;
+    height: 24px;
+  }
+}
+@media (min-width: 1020px) {
+  .top-bar__logo-link img {
+    width: 228px;
+    height: 24px;
+  }
 }
 
 .section-title {
