@@ -8,6 +8,7 @@
 
     max-width: 1020px;
     margin-inline: auto;
+    margin: 0;
 
     @include on-desktop {
       flex-direction: row;
@@ -76,12 +77,14 @@
     font-size: 16px;
     font-weight: 400;
     color: #191919;
+    text-decoration: none;
     margin: 0;
     line-height: 140%;
 
     &:hover {
       color: var(--accent-color);
       transition: color 0.3s ease;
+      color: #191919;
     }
   }
 }

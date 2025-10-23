@@ -27,7 +27,7 @@
     transform: translateX(-100%);
     pointer-events: none;
 
-    &:target { /* так як ми написали menu target після page menu тщ воно буде застосовуватися  саме до page */
+    &:target { /* так як ми написали menu target після page menu то воно буде застосовуватися  саме до page */
     opacity: 1;
     transform: translateX(0);
     pointer-events: all;
