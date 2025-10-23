@@ -39,6 +39,14 @@
     font-weight: 400;
     line-height: 140%;
     box-sizing: border-box;
+
+    &:hover {
+      border: 1px #DBDBDB solid;
+    }
+
+    &:active {
+      border: 2px #F98921 solid;
+    }
   }
 
   textarea.contact__input {

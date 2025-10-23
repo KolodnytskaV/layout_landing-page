@@ -37,4 +37,31 @@
       padding-bottom: 64px;
     }
   }
+
+  &__phone-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+    &__phone-number {
+      display: none;
+      text-decoration: none;
+      color: inherit;
+      font-size: 16px;
+      margin-left: 8px;
+      white-space: nowrap;
+
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    @include on-desktop {
+      &:hover .header__phone-number {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }
