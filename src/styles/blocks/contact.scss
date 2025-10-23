@@ -8,7 +8,7 @@
 
     max-width: 1020px;
     margin-inline: auto;
-    margin: 0;
+    margin: 0 auto;
 
     @include on-desktop {
       flex-direction: row;
@@ -83,7 +83,7 @@
 
     &:hover {
       transition: color 0.3s ease;
-      color: #191919;
+      color: #666666;
     }
   }
 }

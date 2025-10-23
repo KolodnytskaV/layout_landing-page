@@ -35,10 +35,15 @@
   }
 }
 
+img,
+.card,
+.sound__section__link {
+  transition: all 0.3s ease;
+}
+
 img:hover,
 .card:hover,
 .sound__section__link:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease;
   cursor: pointer;
 }
