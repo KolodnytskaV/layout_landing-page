@@ -98,14 +98,13 @@ html, body {
 }
 .menu__top {
   margin-bottom: 32px;
-  padding: 20px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #e5e5e5;
 }
 @media (min-width: 576px) {
   .menu__top {
@@ -298,7 +297,7 @@ img:hover,
   transition: property 0.3s;
 }
 .top-bar__logo-link:hover:hover {
-  transform: scale(1, 2);
+  transform: scale(1.05);
 }
 .top-bar__logo-link:hover {
   transition: property 0.3s;
@@ -643,6 +642,7 @@ img:hover,
     align-items: flex-start;
     padding-inline: 0;
     gap: 120px;
+    min-width: 100%;
     max-width: 1020px;
   }
 }
@@ -705,6 +705,16 @@ img:hover,
 .contact__info-item:hover {
   transition: color 0.3s ease;
   color: #666;
+  transition: property 0.3s;
+}
+.contact__info-item:hover:hover {
+  transform: scale(1.05);
+}
+.contact__info-item:hover {
+  transition: property 0.3s;
+}
+.contact__info-item:hover:hover {
+  transform: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

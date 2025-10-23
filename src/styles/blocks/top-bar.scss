@@ -52,7 +52,7 @@
     }
 
     &:hover {
-      @include hover(transform, scale(1,2));
+      @include hover(transform, scale(1.05));
       @include hover(transform, 0.3s);
     }
 
