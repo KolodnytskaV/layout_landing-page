@@ -719,7 +719,7 @@ img:hover,
   display: block;
   width: 100%;
   height: 56px;
-  background: #1B2129;
+  background: #F98921;
   color: #FFF;
   font-size: 16px;
   font-weight: 700;
@@ -727,6 +727,14 @@ img:hover,
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+.contact__button:hover {
+  color: white;
+  background-color: #1B2129;
+}
+.contact__button:active {
+  color: white;
+  background-color: black;
 }
 .contact__info {
   flex: 1;
